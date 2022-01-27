@@ -9,7 +9,7 @@ Here's a quick TLDR version if you're already familiar with github:
 
 ```bash
 # Create a fork of the `advtraj` repository on github by opening the following
-# link: https://github.com/ParaConUK/advtraj/fork)
+# link: https://github.com/ParaConUK/advtraj/fork
 
 # clone locally your fork of advtraj on github
 git clone https://github.com/<your-github-username>/advtraj/
