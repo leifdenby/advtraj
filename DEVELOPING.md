@@ -39,8 +39,8 @@ git commit
 # you want to push)
 git push origin my-new-feature
 
-# create a pull-request on github to pull in your branch by clicking the link
-# the output from the last command, or go to
+# create a pull-request on github to pull in your branch into the central
+repository clicking the link # the output from the last command, or go to
 # https://github.com/ParaConUK/advtraj/compare
 ```
 
