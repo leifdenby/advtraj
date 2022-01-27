@@ -30,8 +30,8 @@ git checkout -b my-new-feature
 # bug and the run the tests
 python -m pytest .
 
-# apply code cleanup with black, then commit these changes locally with git
-black .
+# then commit these changes locally with git (pre-commit will automatically run
+# linting using the commit hook you installed earlier)
 git add .
 git commit
 
@@ -119,14 +119,14 @@ git push origin my-new-feature
 
 The last command will give you a link to where you can create a pull-request on
 github, otherwise you can also go to
-https://github.com/EUREC4A-UK/advtraj/compare
+https://github.com/ParaConUK/advtraj/compare
 
 
 ## Testing advtraj
 
 `advtraj` is automatically checked on github with tests that reside in `tests/`.
 These are run automatically on all pull-requests against the git
-repository at https://github.com/EUREC4A-UK/advtraj and can be run locally
+repository at https://github.com/ParaConUK/advtraj and can be run locally
 with `pytest` from the root of the repository:
 
 ```bash
