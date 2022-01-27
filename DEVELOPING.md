@@ -8,7 +8,7 @@ these steps below - welcome in the advtraj community! :)
 Here's a quick TLDR version if you're already familiar with github:
 
 ```bash
-# Create a fork of the `advtraj` repository on github by clicking the following
+# Create a fork of the `advtraj` repository on github by opening the following
 # link: https://github.com/ParaConUK/advtraj/fork)
 
 # clone locally your fork of advtraj on github
@@ -46,9 +46,11 @@ git push origin my-new-feature
 
 ## Installing from a local copy
 
-When you're making modifications to the advtraj codebase you will want to
-install this local copy with `pip` instead of installing from github or pypi.
-First you will want to [create your own fork]() of advtraj on github.
+When you're making modifications to the advtraj codebase you will need a local
+copy of the advtraj codebase and install this local copy with `pip` instead of
+installing from github or pypi. First you will want to [create your own
+fork](https://github.com/ParaConUK/advtraj/fork) of advtraj on github, and then
+you clone this repository locally on your computer:
 
 ```bash
 git clone https://github.com/<your-github-username>/advtraj/
@@ -138,4 +140,58 @@ tests. This can be achieved by first installing `ipdb` and setting the
 
 ```bash
 export PYTEST_ADDOPTS='--pdb --pdbcls=IPython.terminal.debugger:Pdb'
+```
+
+
+## Getting changes from the central repository or somebody else's fork
+
+To pull down code from the central repository or someone else's fork on github
+you simply need to add it as a git "remote". When you first clone a repository
+git automatically creates a remote called "origin" which points to the URL you
+cloned from. If you want to pull from other forks of the same repository you
+simply add them.
+
+For example, it is convention to add the central repository as "upstream" (and
+you then use this whenever you want to pull down new changes from the central
+repository). For example, if you wanted to pull a branch called
+`fast-integration-method` from the user `leifdenby` on github, you would first
+add a new remote and fetch its contents:
+
+```bash
+git remote add leif https://github.com/leifdenby/advtraj
+git fetch leif
+```
+
+And then check that out as a new branch
+
+```bash
+git checkout leif/fast-integration -b fast integration
+```
+
+or merge it into you're current branch
+
+```bash
+git merge leif/fast-integration
+```
+
+
+Similarly to get the most recent changes from the central repository. First add
+it as a remote:
+
+```bash
+git remote add upstream https://github.com/ParaConUK/advtraj
+git fetch upstream
+```
+
+And then merge it into your current branch (or create a new branch from it,
+depending on what you want)
+
+```bash
+git merge upstream/master
+```
+
+The `fetch` and `merge` commands to be combined by simply executing
+
+```bash
+git pull upstream master
 ```
