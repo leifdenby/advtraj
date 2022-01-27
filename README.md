@@ -83,7 +83,7 @@ optional arguments:
   --output OUTPUT
 ```
 
-E.g. 
+E.g.
 
 ```bash
 $> python -m advtraj.cli.uclales ~/Desktop/exp_data rico
