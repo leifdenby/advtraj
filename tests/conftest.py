@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 import requests
 
-TESTDATA_URL = "http://gws-access.jasmin.ac.uk/public/eurec4auk/testdata/uclales.advtraj.testdata.tar.gz"  # noqa
+TESTDATA_URL = "http://gws-access.jasmin.ac.uk/public/eurec4auk/testdata/advtraj.uclales.testdata.tar.gz"  # noqa
 
 if os.environ.get("ADVTRAJ_TESTDATA_DIR", None):
     TESTDATA_DIR = Path(os.environ["ADVTRAJ_TESTDATA_DIR"])
