@@ -10,6 +10,9 @@
   used by Github Actions
   [\#26](https://github.com/ParaConUK/advtraj/pull/26) @leifdenby
 
+- add `scipy` to requirements
+  [\#26](https://github.com/ParaConUK/advtraj/pull/26) @leifdenby
+
 
 ## [v0.5.1](https://github.com/ParaConUK/advtraj/tree/v0.5.1)
 
