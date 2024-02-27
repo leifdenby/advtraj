@@ -1,6 +1,0 @@
-scikit-learn
-numpy
-xarray
-netCDF4
-numba
-tqdm
