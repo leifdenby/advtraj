@@ -13,6 +13,9 @@
 - add `scipy` to requirements
   [\#26](https://github.com/ParaConUK/advtraj/pull/26) @leifdenby
 
+- fix ci/cd issues with pre-commit linting due to breaking change in flake8 integration
+  [\#30](https://github.com/ParaConUK/advtraj/pull/30) @leifdenby
+
 
 ## [v0.5.1](https://github.com/ParaConUK/advtraj/tree/v0.5.1)
 
